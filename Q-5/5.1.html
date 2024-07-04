@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table width="600px" border="1">
+        <thead>
+            <tr>
+                <th>a² – b²</th>
+                <th>(a-b)(a+b)</th>
+                <th>a² – b² = (a-b)(a+b)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="ans1"></th>
+                <th id="ans2"></th>
+                <th id="ans3"></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var a = 10, b = 20;
+
+
+        var an1 = (a*a) - (b*b);
+        var an2 = (a+b) * (a-b);
+
+        document.getElementById('ans1').innerHTML = an1;
+        document.getElementById('ans2').innerHTML = an2;
+        document.getElementById('ans3').innerHTML = an1 + " = " + an2;
+    </script>
+</body>
+
+</html>

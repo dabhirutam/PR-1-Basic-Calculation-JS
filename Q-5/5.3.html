@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table width="600px" border="1">
+        <thead>
+            <tr>
+                <th>(a+b+c)²</th>
+                <th>a²+b²+c²+2ab+2ac+2bc</th>
+                <th>(a+b+c)² = a²+b²+c²+2ab+2ac+2bc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="ans1"></th>
+                <th id="ans2"></th>
+                <th id="ans3"></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var a = 10, b = 20, c = 30;
+
+        var an1 = (a+b+c) * (a+b+c);
+        var an2 = (a*a) + (b*b) + (c*c) + (2*a*b) + (2*a*c) + (2*b*c);
+
+        document.getElementById('ans1').innerHTML = an1;
+        document.getElementById('ans2').innerHTML = an2;
+        document.getElementById('ans3').innerHTML = an1 + " = " + an2;
+    </script>
+</body>
+
+</html>
